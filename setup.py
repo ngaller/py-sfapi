@@ -15,7 +15,7 @@ setuptools.setup(
     description="Simple API wrapper for Salesforce",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/nicocrm/sfapi",
+    url="https://github.com/nicocrm/py-sfapi",
     packages=['sfapi'],
     classifiers=[
         "Programming Language :: Python :: 3",
