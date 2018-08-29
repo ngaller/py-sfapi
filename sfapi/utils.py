@@ -9,7 +9,7 @@ import re
 def format_sf_date(src, format='%m/%d/%Y'):
     if not re.match('\d+-\d+-\d+', src):
         d = datetime.datetime.strptime(src, format)
-        return datetime.datetime.strftime(d, '%Y-%m-%dZ')
+        return datetime.datetime.strftime(d, '%Y-%m-%d')
     return src
 
 

@@ -126,7 +126,7 @@ xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
             server_url = xml.find(
                 './/{urn:partner.soap.sforce.com}serverUrl').text
             self.data_url = re.match('^https://[^/]*', server_url).group(0) + \
-                '/services/data/v20.0/'
+                '/services/data/v35.0/'
             self.async_url = re.match('^(https://[^/]*)\.salesforce\.com', server_url).group(1) + \
                 '-api.salesforce.com/services/async/35.0/'
         else:
