@@ -9,7 +9,7 @@ install_requires = [
 
 setuptools.setup(
     name="sfapi",
-    version="1.0.1",
+    version="1.0.2",
     author="nicocrm",
     author_email="nic@f1code.com",
     description="Simple API wrapper for Salesforce",
