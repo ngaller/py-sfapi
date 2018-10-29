@@ -3,13 +3,9 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-install_requires = [
-    'requests>=2.7.0'
-]
-
 setuptools.setup(
     name="sfapi",
-    version="1.0.2",
+    version="1.0.3",
     author="nicocrm",
     author_email="nic@f1code.com",
     description="Simple API wrapper for Salesforce",
@@ -22,4 +18,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    install_requires=[
+        'requests>=2.7.0'
+    ]
 )
