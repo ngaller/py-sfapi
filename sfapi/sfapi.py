@@ -55,8 +55,10 @@ class BulkJob:
     def _create_batch(self, jobid, data):
         """This posts the batch data in CSV format, and return the batch id"""
         csv = utils.make_csv(data)
+        payload = csv.encode('utf-8')
         url = self.api.async_url + 'job/' + jobid + '/batch'
-        qr = utils.decode_xml(self.api.do_post(url, csv, 'text/csv'))
+        qr = utils.decode_xml(self.api.do_post(
+            url, payload, 'text/csv; charset=utf-8'))
         return qr['id']
 
     def _wait_for_batch(self, jobid, batchid):
