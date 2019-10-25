@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="sfapi",
-    version="1.0.5",
+    version="1.0.6",
     author="nicocrm",
     author_email="nic@f1code.com",
     description="Simple API wrapper for Salesforce",
